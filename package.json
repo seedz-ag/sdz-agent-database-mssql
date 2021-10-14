@@ -1,0 +1,18 @@
+{
+  "name": "sdz-agent-database-mssql",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "license": "APACHE",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration"
+  },
+  "dependencies": {
+    "mssql": "^7.2.1",
+    "sdz-agent-types": "https://github.com/seedz-ag/sdz-agent-types.git"
+  },
+  "devDependencies": {
+    "@types/mssql": "^7.1.3",
+    "@types/node": "^16.6.1"
+  }
+}
