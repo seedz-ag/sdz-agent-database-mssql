@@ -1,3 +1,3 @@
 import { AbstractRepository } from "sdz-agent-types";
-export default class OracleRepository extends AbstractRepository {
+export default class SQLRepository extends AbstractRepository {
 }

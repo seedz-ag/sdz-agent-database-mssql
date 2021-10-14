@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const oracledb_1 = __importDefault(require("oracledb"));
+const mssql_1 = __importDefault(require("mssql"));
 class Connector {
     constructor(config) {
         this.setConfig(config);
@@ -11,7 +11,8 @@ class Connector {
     async connect() {
         if (!this.connection) {
             try {
-                this.connection = await oracledb_1.default.getConnection(this.config);
+                console.log(this.config);
+                return this.connection = await mssql_1.default.connect(this.config);
             }
             catch (e) {
                 console.log(e);
@@ -34,9 +35,9 @@ class Connector {
             await this.connect();
         }
         try {
-            const response = await this.connection.execute(query);
+            const response = await this.connection.query(query);
             if (response) {
-                resultSet = response.rows;
+                resultSet = response.recordset;
             }
         }
         catch (e) {
