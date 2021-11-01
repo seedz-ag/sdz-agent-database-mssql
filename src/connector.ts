@@ -16,8 +16,16 @@ export default class Connector implements ConnectorInterface {
   async connect(): Promise<any> {
     if (!this.connection) {
       try {
-        console.log(this.config)
-        return this.connection = await mssql.connect(this.config);
+        return this.connection = await mssql.connect({
+          user: this.config.username,
+          password: this.config.password,
+          server: this.config.host,
+          database: this.config.database,
+          port: this.config.port,
+          options: {
+            trustServerCertificate: true,
+          }
+        });
       } catch (e) {
         console.log(e);
       }

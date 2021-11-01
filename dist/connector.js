@@ -11,8 +11,16 @@ class Connector {
     async connect() {
         if (!this.connection) {
             try {
-                console.log(this.config);
-                return this.connection = await mssql_1.default.connect(this.config);
+                return this.connection = await mssql_1.default.connect({
+                    user: this.config.username,
+                    password: this.config.password,
+                    server: this.config.host,
+                    database: this.config.database,
+                    port: this.config.port,
+                    options: {
+                        trustServerCertificate: true,
+                    }
+                });
             }
             catch (e) {
                 console.log(e);
