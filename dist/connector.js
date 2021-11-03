@@ -16,7 +16,7 @@ class Connector {
                     password: this.config.password,
                     server: this.config.host,
                     database: this.config.schema,
-                    port: this.config.port,
+                    port: Number(this.config.port),
                     options: {
                         trustServerCertificate: true,
                     }
