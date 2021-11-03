@@ -1,6 +1,7 @@
 import {
   ConnectorInterface,
   DatabaseRow,
+  ConfigDatabaseInterface
 } from "sdz-agent-types";
 
 import  mssql, { ConnectionPool  } from "mssql";
@@ -9,7 +10,7 @@ export default class Connector implements ConnectorInterface {
   private connection: ConnectionPool;
   private config: any;
 
-  constructor(config: any) {
+  constructor(config: ConfigDatabaseInterface) {
     this.setConfig(config);
   }
 
