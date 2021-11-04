@@ -16,6 +16,6 @@ export default class SQLRepository extends AbstractRepository {
         const resultSet = await this.execute(`SELECT COUNT (*) AS total FROM (${this.loadFile(entity)}) as tab1`);
         const obj:any = {}
         Object.keys(resultSet).map((key) =>  obj[key.toLowerCase()] = resultSet[key])
-        return obj.total;
+        return obj[0].total;
       }
 }

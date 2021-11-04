@@ -15,7 +15,7 @@ class SQLRepository extends sdz_agent_types_1.AbstractRepository {
         const resultSet = await this.execute(`SELECT COUNT (*) AS total FROM (${this.loadFile(entity)}) as tab1`);
         const obj = {};
         Object.keys(resultSet).map((key) => obj[key.toLowerCase()] = resultSet[key]);
-        return obj.total;
+        return obj[0].total;
     }
 }
 exports.default = SQLRepository;
