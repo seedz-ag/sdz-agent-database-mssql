@@ -1,7 +1,10 @@
 {
-    "cnpjOrigemDados": null,
-    "dataCadastro": null,
-    "dataAtualizacao": null,
-    "id": null,
-    "descricao": null
+	"cnpjOrigemDados": "VE1_FILIAL",
+	"dataCadastro": "VE1_DATINC",
+	"dataAtualizacao": "VE1_DATALT",
+	"id": "VE1_CODMAR",
+	"descricao": "VE1_DESMAR",
+    "dtInclu": "DATA_INCLUSAO",
+    "dtAlter": "DATA_ALTERACAO",
+    "deletado": "VE1"
 }

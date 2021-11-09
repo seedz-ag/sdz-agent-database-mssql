@@ -1,9 +1,9 @@
 {
-    "cnpjOrigemDadosFaturamento": "F2_FILIAL",
+	"cnpjOrigemDadosFaturamento": "F2_FILIAL",
 	"dataCadastroFaturamento": "DATA_INCLUSAO",
 	"dataAtualizacaoFaturamento": "DATA_ALTERACAO",
-	"id": "(F2_FILIAL||F2_DOC||F2_SERIE||F2_CLIENTE||F2_LOJA||F2_EMISSAO||F2_CHVNFE||F2_IDNF) id",
-	"idCliente": "(F2_CLIENTE||F2_LOJA) idCliente",
+	"id": "id",
+	"idCliente": "idCliente",
 	"documentoCliente": "A1_CGC",
 	"numeroNfFaturamento": "F2_DOC",
 	"serieNfFaturamento": "F2_SERIE",
@@ -14,12 +14,12 @@
 	"ufEntregaFaturamento": "F2_UFDEST",
 	"vlrTotalProdutosFaturamento": "F2_VALMERC",
 	"vlrTotalNfFaturamento": "F2_VALBRUT",
-	"tipoFaturamento": "(F2_TIPO||F2_TIPODOC) tipoFaturamento",
+	"tipoFaturamento": "tipoFaturamento",
 	"chave1": "F2_CLIENTE",
 	"chave2": "A1_COD",
 	"chave1_2": "F2_LOJA",
 	"chave2_2": "A1_LOJA",
-    "dtInclu": "USERLGI",
-    "dtAlter": "USERLGA",
+    "dtInclu": "DATA_INCLUSAO",
+    "dtAlter": "DATA_ALTERACAO",
     "deletado": "SF2"
 }

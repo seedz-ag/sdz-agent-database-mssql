@@ -1,7 +1,10 @@
 {
-    "cnpjOrigemDados": null,
-    "dataCadastro": null,
-    "dataAtualizacao": null,
-    "id": null,
-    "descricao": null
+    "cnpjOrigemDados": "BM_FILIAL",
+    "dataCadastro": "DATA_INCLUSAO",
+    "dataAtualizacao": "DATA_ALTERACAO",
+    "id": "BM_GRUPO",
+    "descricao": "BM_DESC",
+    "dtInclu": "DATA_INCLUSAO",
+    "dtAlter": "DATA_ALTERACAO",
+    "deletado": "SBM"
 }

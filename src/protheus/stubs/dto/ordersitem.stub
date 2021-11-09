@@ -1,7 +1,7 @@
-{ 
-    "cnpjOrigemDados": "C6_FILIAL",
+{
+	"cnpjOrigemDados": "C6_FILIAL",
 	"regraNegocio": "",
-	"id": "(C6_FILIAL||C6_CLI||C6_NUM||C6_ITEM) id",
+	"id": "id",
 	"idPedidoItem": "C6_ITEM",
 	"dataCadastro": "DATA_INCLUSAO",
 	"dataAtualizacao": "DATA_ALTERACAO",
@@ -26,11 +26,11 @@
 	"idexcItem": "C6_CHASSI",
 	"tipoMovimentacaoProdFat": "C6_TES",
 	"qtdFaturada": "C6_QTDENT",
-    "dtInclu": "USERLGI",
-    "dtAlter": "USERLGA",
+    "dtInclu": "DATA_INCLUSAO",
+    "dtAlter": "DATA_ALTERACAO",
     "chave1": "C6_NUM",
     "chave2": "C5_NUM",
     "chave3": "C6_PRODUTO",
     "chave4": "B1_COD",
     "deletado": "SC6"
-} 
+}

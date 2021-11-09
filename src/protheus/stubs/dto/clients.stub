@@ -1,6 +1,6 @@
 {
-    "cnpjOrigemDados": "D2_FILIAL",
-	"id": "(A1_COD||A1_LOJA) id",
+	"cnpjOrigemDados": "A1_FILIAL",
+	"id": "id",
 	"dataCadastro": "DATA_INCLUSAO",
 	"dataAtualizacao": "DATA_ALTERACAO",
 	"razaoSocial": "A1_NOME",
@@ -31,9 +31,7 @@
 	"recIr": "A1_RECIRRF",
 	"origem": "A1_ORIGCT",
 	"regiao": "A1_REGIAO",
-    "dtInclu": "USERLGI",
-    "dtAlter": "USERLGA",
-    "deletado": "SA1",
-    "chave1": "A1_COD",
-    "chave2": "D2_CLIENTE"
+	"dtInclu": "DATA_INCLUSAO",
+    "dtAlter": "DATA_ALTERACAO",
+	"deletado": "SA1"
 }
