@@ -23,7 +23,7 @@ export default class Connector implements ConnectorInterface {
           server: this.config.host,
           database: this.config.schema,
           port: Number(this.config.port),
-          requestTimeout: 99999,
+          requestTimeout: 999999,
           options: {
             trustServerCertificate: true,
           },
