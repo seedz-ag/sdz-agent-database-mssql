@@ -1,10 +1,10 @@
 import {
   ConnectorInterface,
   DatabaseRow,
-  ConfigDatabaseInterface
+  ConfigDatabaseInterface,
 } from "sdz-agent-types";
 
-import  mssql, { ConnectionPool  } from "mssql";
+import mssql, { ConnectionPool } from "mssql";
 
 export default class Connector implements ConnectorInterface {
   private connection: ConnectionPool;
@@ -17,16 +17,17 @@ export default class Connector implements ConnectorInterface {
   async connect(): Promise<any> {
     if (!this.connection) {
       try {
-        return this.connection = await mssql.connect({
+        return (this.connection = await mssql.connect({
           user: this.config.username,
           password: this.config.password,
           server: this.config.host,
           database: this.config.schema,
-          port: Number(this.config.port) ,
+          port: Number(this.config.port),
+          requestTimeout: 99999,
           options: {
             trustServerCertificate: true,
-          }
-        });
+          },
+        }));
       } catch (e) {
         console.log(e);
       }
