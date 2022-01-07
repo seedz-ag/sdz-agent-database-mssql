@@ -35,7 +35,7 @@
 	"vencParcela8": "",
 	"vlrParcela9": "",
 	"vencParcela9": "",
-	"vlrfrete": "C5_FRETE",
+	"vlrFrete": "C5_FRETE",
     "dtInclu": "DATA_INCLUSAO",
     "dtAlter": "DATA_ALTERACAO",
 	"chave1": "C5_CLIENTE",

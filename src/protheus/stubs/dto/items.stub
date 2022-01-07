@@ -19,7 +19,7 @@
 	"modelo": "B1_MODELO",
 	"detalhes": "B1_DESC_P",
 	"barras": "B1_CODBAR",
-	"situação": "B1_SITPROD",
+	"situacao": "B1_SITPROD",
 	"classe": "",
 	"cartela": "",
 	"nomeCaracteristica1": "",
@@ -36,8 +36,6 @@
 	"valorCaracteristica6": "",
 	"nomeCaracteristica7": "",
 	"valorCaracteristica7": "",
-	"chave1": "B1_GRUPO",
-	"chave2": "BM_GRUPO",
 	"dtInclu": "DATA_INCLUSAO",
 	"dtAlter": "DATA_ALTERACAO",
 	"deletado": "SB1"

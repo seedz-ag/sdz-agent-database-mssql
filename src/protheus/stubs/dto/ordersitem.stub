@@ -28,9 +28,5 @@
 	"qtdFaturada": "C6_QTDENT",
     "dtInclu": "DATA_INCLUSAO",
     "dtAlter": "DATA_ALTERACAO",
-    "chave1": "C6_NUM",
-    "chave2": "C5_NUM",
-    "chave3": "C6_PRODUTO",
-    "chave4": "B1_COD",
     "deletado": "SC6"
 }
