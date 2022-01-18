@@ -4,7 +4,7 @@ export default class SQLRepository extends AbstractRepository {
     execute(query: string, page?: number, limit?: number): Promise<any> {
         const statement = [
           this.buildQuery(query),
-          "undefined" !== typeof page && limit ? `ORDER BY	(SELECT NULL) OFFSET ${page * limit} ROWS FETCH NEXT ${limit} ROWS ONLY` : null,
+          "undefined" !== typeof page && limit ? `ORDER BY TIPOQUERY ASC, B_R_E_C_O_ASC OFFSET ${page * limit} ROWS FETCH NEXT ${limit} ROWS ONLY` : null,
         ]
         
           .filter((item) => !!item)
