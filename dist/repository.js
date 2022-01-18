@@ -5,7 +5,7 @@ class SQLRepository extends sdz_agent_types_1.AbstractRepository {
     execute(query, page, limit) {
         const statement = [
             this.buildQuery(query),
-            "undefined" !== typeof page && limit ? `ORDER BY TIPOQUERY ASC, B_R_E_C_O_ASC OFFSET ${page * limit} ROWS FETCH NEXT ${limit} ROWS ONLY` : null,
+            "undefined" !== typeof page && limit ? `ORDER BY TIPOQUERY ASC, B_R_E_C_O_ ASC OFFSET ${page * limit} ROWS FETCH NEXT ${limit} ROWS ONLY` : null,
         ]
             .filter((item) => !!item)
             .join(" ");

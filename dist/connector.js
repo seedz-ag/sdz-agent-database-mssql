@@ -18,7 +18,7 @@ class Connector {
                     database: this.config.schema,
                     port: Number(this.config.port),
                     requestTimeout: 999999,
-                    encryptd: false,
+                    encrypt: false,
                     options: {
                         trustServerCertificate: true,
                     },
