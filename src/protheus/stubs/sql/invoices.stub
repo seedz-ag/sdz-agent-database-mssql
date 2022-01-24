@@ -18,7 +18,7 @@ SELECT
       A1_CGC,
       F2_DOC,
       F2_SERIE,
-      F2_EMISSAO,
+      CAST(F2_EMISSAO as DATE) F2_EMISSAO,
       F2_DAUTNFE,
       (CASE F2_STATUS
             WHEN ' ' THEN 'Concluida'
@@ -67,7 +67,7 @@ SELECT
       A1_CGC,
       F1_DOC,
       F1_SERIE,
-      F1_EMISSAO,
+      CAST(F1_EMISSAO as DATE) F1_EMISSAO,
       F1_DAUTNFE,
       (CASE F1_STATUS
             WHEN ' ' THEN 'Concluida'
