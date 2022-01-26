@@ -101,7 +101,6 @@ WHERE (B.F1_USERLGI <> ' '
             (1 =1 AND (CONVERT(VARCHAR, DATEADD(DAY, ((ASCII(SUBSTRING(B.F1_USERLGA, 12, 1)) - 50) * 100 + (ASCII(SUBSTRING(B.F1_USERLGA, 16, 1)) - 50)), '19960101'), 112) >= {START_DATE})
             )
             )
+      AND F1_TIPO = 'D'
       )
-  AND F1_TIPO = 'D'
-)
 ) AS RETORNO
