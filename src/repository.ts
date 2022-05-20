@@ -12,8 +12,8 @@ export default class SQLRepository extends AbstractRepository {
         return this.getConnector().execute(statement);
       }
 
-      async count(entity: string): Promise<number> {
-        const resultSet = await this.execute(`SELECT COUNT (*) AS total FROM (${this.buildQuery(this.loadFile(entity))}) as tab1`);
+      async count(query: string): Promise<number> {
+        const resultSet = await this.execute(`SELECT COUNT (*) AS total FROM (${this.buildQuery(query)}) as tab1`);
         const obj:any = {}
         Object.keys(resultSet).map((key) =>  obj[key.toLowerCase()] = resultSet[key])
         return obj[0].total;
