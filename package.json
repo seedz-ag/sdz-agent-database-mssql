@@ -10,7 +10,7 @@
    },
   "dependencies": {
     "mssql": "^7.2.1",
-    "sdz-agent-types": "https://github.com/seedz-ag/sdz-agent-types.git"
+    "sdz-agent-types": "https://github.com/seedz-ag/sdz-agent-types.git#bugfix/#24905"
   },
   "devDependencies": {
     "@types/mssql": "^7.1.3",
