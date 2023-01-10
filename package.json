@@ -9,7 +9,7 @@
     "build": "tsc --declaration"
    },
   "dependencies": {
-    "mssql": "^7.2.1",
+    "mssql": "^8.0.0",
     "sdz-agent-types": "https://github.com/seedz-ag/sdz-agent-types.git"
   },
   "devDependencies": {
